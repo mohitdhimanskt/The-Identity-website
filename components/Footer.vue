@@ -1,287 +1,310 @@
 <template>
-  <footer class="footer-section">
-    <div class="container">
-      <div class="footer-cta pt-5 pb-5">
-        <div class="row">
-          <div class="col-xl-4 col-md-4 mb-30">
-            <div class="single-cta">
-              <i class="fas fa-map-marker-alt"></i>
-              <div class="cta-text">
-                <h4>Find us</h4>
-                <span>1010 Avenue, sw 54321, chandigarh</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-4 col-md-4 mb-30">
-            <div class="single-cta">
-              <i class="fas fa-phone"></i>
-              <div class="cta-text">
-                <h4>Call us</h4>
-                <span>9876543210 0</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-4 col-md-4 mb-30">
-            <div class="single-cta">
-              <i class="far fa-envelope-open"></i>
-              <div class="cta-text">
-                <h4>Mail us</h4>
-                <span>mail@info.com</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="footer-content pt-5 pb-5">
-        <div class="row">
-          <div class="col-xl-4 col-lg-4 mb-50">
-            <div class="footer-widget">
-              <div class="footer-logo">
-                <a href="index.html"
-                  ><img
-                    src="https://i.ibb.co/QDy827D/ak-logo.png"
-                    class="img-fluid"
-                    alt="logo"
-                /></a>
-              </div>
-              <div class="footer-text">
-                <p>
-                  Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed
-                  do eiusmod tempor incididuntut consec tetur adipisicing
-                  elit,Lorem ipsum dolor sit amet.
-                </p>
-              </div>
-              <div class="footer-social-icon">
-                <span>Follow us</span>
-                <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
-                <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
-                <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
-            <div class="footer-widget">
-              <div class="footer-widget-heading">
-                <h3>Useful Links</h3>
-              </div>
-              <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">about</a></li>
+    
 
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Our Product</a></li>
-              </ul>
+<footer class="new_footer_area bg_color">
+            <div class="new_footer_top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                                <h3 class="f-title f_600 t_color f_size_18">Get in Touch</h3>
+                                <p>Don’t miss any updates of our new templates and extensions.!</p>
+                                <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true" _lpchecked="1">
+                                    <input type="text" name="EMAIL" class="form-control memail" placeholder="Email">
+                                    <button class="btn btn_get btn_get_two" type="submit">Subscribe</button>
+                                    <p class="mchimp-errmessage" style="display: none;"></p>
+                                    <p class="mchimp-sucmessage" style="display: none;"></p>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
+                                <h3 class="f-title f_600 t_color f_size_18">Download</h3>
+                                <ul class="list-unstyled f_list">
+                                    <li><a href="#">Company</a></li>
+                                    <li><a href="#">Android App</a></li>
+                                    <li><a href="#">ios App</a></li>
+                                    <li><a href="#">Desktop</a></li>
+                                    <li><a href="#">Projects</a></li>
+                                    <li><a href="#">My tasks</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
+                                <h3 class="f-title f_600 t_color f_size_18">Help</h3>
+                                <ul class="list-unstyled f_list">
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="#">Term &amp; conditions</a></li>
+                                    <li><a href="#">Reporting</a></li>
+                                    <li><a href="#">Documentation</a></li>
+                                    <li><a href="#">Support Policy</a></li>
+                                    <li><a href="#">Privacy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
+                                <h3 class="f-title f_600 t_color f_size_18">Team Solutions</h3>
+                                <div class="f_social_icon">
+                                    <a href="facebook" class="fa fa-facebook"></a>
+                                    <a href="twitter" class="fa fa-twitter"></a>
+                                    <a href="linkedin" class="fa fa-linkedin"></a>
+                                    <a href="pinterest" class="fa fa-pinterest"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_bg">
+                    <div class="footer_bg_one"></div>
+                    <div class="footer_bg_two"></div>
+                </div>
             </div>
-          </div>
-          <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
-            <div class="footer-widget">
-              <div class="footer-widget-heading">
-                <h3>Subscribe</h3>
-              </div>
-              <div class="footer-text mb-25">
-                <p>
-                  Don’t miss to subscribe to our new feeds, kindly fill the form
-                  below.
-                </p>
-              </div>
-              <div class="subscribe-form">
-                <form action="#">
-                  <input type="text" placeholder="Email Address" />
-                  <button><i class="fab fa-telegram-plane"></i></button>
-                </form>
-              </div>
+            <div class="footer_bottom">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-sm-7">
+                            <p class="mb-0 f_400">© cakecounter Inc.. 2019 All rights reserved.</p>
+                        </div>
+                        <div class="col-lg-6 col-sm-5 text-right">
+                            <p>Made with <i class="icon_heart"></i> in <a href="#">CakeCounter</a></p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="copyright-area">
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-6 col-lg-6 text-center text-lg-left">
-            <div class="copyright-text">
-              <p>
-                Copyright &copy; 2018, All Right Reserved
-                <a href="https://codepen.io/anupkumar92/"></a>
-              </p>
-            </div>
-          </div>
-          <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
-            <div class="footer-menu">
-              <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Terms</a></li>
-                <li><a href="#">Privacy</a></li>
-                <li><a href="#">Policy</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
+        </footer>
 </template>
+
+<script>
+  import { fa } from '@fortawesome/free-solid-svg-icons'
+  import { fafacebook } from '@fortawesome/free-brands-svg-icons'
+  export default {
+    computed: {
+      fa () {
+         return fa
+      },
+      fafacebook () {
+         return fafacebook
+      },
+      fatwitter () {
+         return fatwitter
+      },
+      falinkedin () {
+         return falinkedin
+      },
+      fapinterest() {
+         return fapinterest
+      }
+    },
+  }
+</script>
 <style scoped>
-ul {
-  margin: 0px;
-  padding: 0px;
+body {
+    background: #fbfbfd;
 }
-.footer-section {
-  background: #151414;
-  position: relative;
+
+.new_footer_area {
+    background: #fbfbfd;
 }
-.footer-cta {
-  border-bottom: 1px solid #373636;
+
+
+.new_footer_top {
+    padding: 120px 0px 270px;
+    position: relative;
+      overflow-x: hidden;
 }
-.single-cta i {
-  color: #ff5e14;
-  font-size: 30px;
-  float: left;
-  margin-top: 8px;
+.new_footer_area .footer_bottom {
+    padding-top: 5px;
+    padding-bottom: 50px;
 }
-.cta-text {
-  padding-left: 15px;
-  display: inline-block;
+.footer_bottom {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    color: #7f88a6;
+    padding: 27px 0px;
 }
-.cta-text h4 {
-  color: #fff;
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 2px;
+.new_footer_top .company_widget p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    color: #6a7695;
+    margin-bottom: 20px;
 }
-.cta-text span {
-  color: #757575;
-  font-size: 15px;
+.new_footer_top .company_widget .f_subscribe_two .btn_get {
+    border-width: 1px;
+    margin-top: 20px;
 }
-.footer-content {
-  position: relative;
-  z-index: 2;
+.btn_get_two:hover {
+    background: transparent;
+    color: #5e2ced;
 }
-.footer-pattern img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 330px;
-  background-size: cover;
-  background-position: 100% 100%;
+.btn_get:hover {
+    color: #fff;
+    background: #6754e2;
+    border-color: #6754e2;
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
-.footer-logo {
-  margin-bottom: 30px;
+a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
+    text-decoration: none;
+    outline: none;
 }
-.footer-logo img {
-  max-width: 200px;
+
+
+
+.new_footer_top .f_widget.about-widget .f_list li a:hover {
+    color: #5e2ced;
 }
-.footer-text p {
-  margin-bottom: 14px;
-  font-size: 14px;
-  color: #7e7e7e;
-  line-height: 28px;
+.new_footer_top .f_widget.about-widget .f_list li {
+    margin-bottom: 11px;
 }
-.footer-social-icon span {
-  color: #fff;
-  display: block;
-  font-size: 20px;
-  font-weight: 700;
-  font-family: "Poppins", sans-serif;
-  margin-bottom: 20px;
+.f_widget.about-widget .f_list li:last-child {
+    margin-bottom: 0px;
 }
-.footer-social-icon a {
-  color: #fff;
-  font-size: 16px;
-  margin-right: 15px;
+.f_widget.about-widget .f_list li {
+    margin-bottom: 15px;
 }
-.footer-social-icon i {
-  height: 40px;
-  width: 40px;
-  text-align: center;
-  line-height: 38px;
-  border-radius: 50%;
+.f_widget.about-widget .f_list {
+    margin-bottom: 0px;
 }
-.facebook-bg {
-  background: #3b5998;
+.new_footer_top .f_social_icon a {
+    width: 44px;
+    height: 44px;
+    line-height: 43px;
+    background: transparent;
+    border: 1px solid #e2e2eb;
+    font-size: 24px;
 }
-.twitter-bg {
-  background: #55acee;
+.f_social_icon a {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    font-size: 14px;
+    line-height: 45px;
+    color: #858da8;
+    display: inline-block;
+    background: #ebeef5;
+    text-align: center;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
 }
-.google-bg {
-  background: #dd4b39;
+.ti-facebook:before {
+    content: "\e741";
 }
-.footer-widget-heading h3 {
-  color: #fff;
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 40px;
-  position: relative;
+.ti-twitter-alt:before {
+    content: "\e74b";
 }
-.footer-widget-heading h3::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -15px;
-  height: 2px;
-  width: 50px;
-  background: #ff5e14;
+.ti-vimeo-alt:before {
+    content: "\e74a";
 }
-.footer-widget ul li {
-  display: inline-block;
-  float: left;
-  width: 50%;
-  margin-bottom: 12px;
+.ti-pinterest:before {
+    content: "\e731";
 }
-.footer-widget ul li a:hover {
-  color: #ff5e14;
+
+.btn_get_two {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: #5e2ced;
+    border-color: #5e2ced;
+    color: #fff;
 }
-.footer-widget ul li a {
-  color: #878787;
-  text-transform: capitalize;
+
+.btn_get_two:hover {
+    background: transparent;
+    color: #5e2ced;
 }
-.subscribe-form {
-  position: relative;
-  overflow: hidden;
+
+.new_footer_top .f_social_icon a:hover {
+    background: #5e2ced;
+    border-color: #5e2ced;
+  color:white;
 }
-.subscribe-form input {
-  width: 100%;
-  padding: 14px 28px;
-  background: #2e2e2e;
-  border: 1px solid #2e2e2e;
-  color: #fff;
+.new_footer_top .f_social_icon a + a {
+    margin-left: 4px;
 }
-.subscribe-form button {
-  position: absolute;
-  right: 0;
-  background: #ff5e14;
-  padding: 13px 20px;
-  border: 1px solid #ff5e14;
-  top: 0;
+.new_footer_top .f-title {
+    margin-bottom: 30px;
+    color: #263b5e;
 }
-.subscribe-form button i {
-  color: #fff;
-  font-size: 22px;
-  transform: rotate(-6deg);
+.f_600 {
+    font-weight: 600;
 }
-.copyright-area {
-  background: #202020;
-  padding: 25px 0;
+.f_size_18 {
+    font-size: 18px;
 }
-.copyright-text p {
-  margin: 0;
-  font-size: 14px;
-  color: #878787;
+h1, h2, h3, h4, h5, h6 {
+    color: #4b505e;
 }
-.copyright-text p a {
-  color: #ff5e14;
+.new_footer_top .f_widget.about-widget .f_list li a {
+    color: #6a7695;
 }
-.footer-menu li {
-  display: inline-block;
-  margin-left: 20px;
+
+
+.new_footer_top .footer_bg {
+    position: absolute;
+    bottom: 0;
+    background: url("http://droitthemes.com/html/saasland/img/seo/footer_bg.png") no-repeat scroll center 0;
+    width: 100%;
+    height: 266px;
 }
-.footer-menu li:hover a {
-  color: #ff5e14;
+
+.new_footer_top .footer_bg .footer_bg_one {
+    background: url("https://1.bp.blogspot.com/-mvKUJFGEc-k/XclCOUSvCnI/AAAAAAAAUAE/jnBSf6Fe5_8tjjlKrunLBXwceSNvPcp3wCLcBGAsYHQ/s1600/volks.gif") no-repeat center center;
+    width: 330px;
+    height: 105px;
+  background-size:100%;
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    -webkit-animation: myfirst 22s linear infinite;
+    animation: myfirst 22s linear infinite;
 }
-.footer-menu li a {
-  font-size: 14px;
-  color: #878787;
+
+.new_footer_top .footer_bg .footer_bg_two {
+    background: url("https://1.bp.blogspot.com/-hjgfxUW1o1g/Xck--XOdlxI/AAAAAAAAT_4/JWYFJl83usgRFMvRfoKkSDGd--_Sv04UQCLcBGAsYHQ/s1600/cyclist.gif") no-repeat center center;
+    width: 88px;
+    height: 100px;
+  background-size:100%;
+    bottom: 0;
+    left: 38%;
+    position: absolute;
+    -webkit-animation: myfirst 30s linear infinite;
+    animation: myfirst 30s linear infinite;
 }
+
+
+
+@-moz-keyframes myfirst {
+  0% {
+    left: -25%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@-webkit-keyframes myfirst {
+  0% {
+    left: -25%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes myfirst {
+  0% {
+    left: -25%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+/*************footer End*****************/
+
+
 </style>

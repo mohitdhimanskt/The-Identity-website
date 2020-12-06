@@ -1,6 +1,10 @@
 <template>
-  <div>
+  <div >
+    <div class="title">
+      <h1>Our Top Featured Motorcycle</h1>
+      </div>
     <nuxt-link
+      v-for="vechicle in vehicles"
       :key="vechicle.id"
       :to="{ name: 'vechicle-slug', params: { slug: vechicle.slug } }"
       class="uk-link-reset"
@@ -29,9 +33,9 @@
       </div>
     </nuxt-link>
 
-    <div class="uk-navbar-right">
+    <!-- <div class="uk-navbar-right">
       <ul class="uk-navbar-nav">
-        <li v-for="vechicle in vechicles" :key="vechicle.id">
+        <li v-for="vechicle in vehicles" :key="vechicle.id">
           <nuxt-link
             :to="{ name: 'vechicle-slug', params: { slug: vechicle.slug } }"
             tag="a"
@@ -40,7 +44,7 @@
           </nuxt-link>
         </li>
       </ul>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -49,9 +53,8 @@ import { getStrapiMedia } from "../utils/medias";
 
 export default {
   props: {
-    article: {
-      type: Object,
-      default: () => ({})
+    vehicles: {
+      type: Array,
     }
   },
   methods: {
@@ -59,3 +62,6 @@ export default {
   }
 };
 </script>
+<style>
+
+</style>
