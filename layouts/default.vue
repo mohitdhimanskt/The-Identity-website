@@ -1,10 +1,23 @@
 <template>
   <div>
-    <Header></Header>
+    <Header :pages="pages"></Header>
     <Nuxt />
     <Footer></Footer>
   </div>
 </template>
+
+<script>
+export default {
+  async fetch() {
+    this.pages = await this.$strapi.find("pages");
+  },
+  data: function () {
+    return {
+      pages: [],
+    };
+  },
+};
+</script>
 
 <style>
 html {

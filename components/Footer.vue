@@ -3,7 +3,7 @@
 
 <footer class="new_footer_area bg_color">
             <div class="new_footer_top">
-                <div class="container">
+                <div class="bike">
                     <div class="row">
                         <div class="col-lg-3 col-md-6">
                             <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
@@ -62,13 +62,13 @@
                 </div>
             </div>
             <div class="footer_bottom">
-                <div class="container">
+                <div class="bike">
                     <div class="row align-items-center">
                         <div class="col-lg-6 col-sm-7">
-                            <p class="mb-0 f_400">© cakecounter Inc.. 2019 All rights reserved.</p>
+                            <p class="mb-0 f_400">© BikeRenting Inc.. 2020 All rights reserved.</p>
                         </div>
                         <div class="col-lg-6 col-sm-5 text-right">
-                            <p>Made with <i class="icon_heart"></i> in <a href="#">CakeCounter</a></p>
+                            <p>Made with <i class="icon_heart"></i> in <a href="#">BikeRenting</a></p>
                         </div>
                     </div>
                 </div>
@@ -77,8 +77,8 @@
 </template>
 
 <script>
-  import { fa } from '@fortawesome/free-solid-svg-icons'
-  import { fafacebook } from '@fortawesome/free-brands-svg-icons'
+//   import { fa } from '@fortawesome/free-solid-svg-icons'
+//   import { fafacebook } from '@fortawesome/free-brands-svg-icons'
   export default {
     computed: {
       fa () {
@@ -152,7 +152,14 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
     outline: none;
 }
 
-
+.bike{
+    margin: 0 auto;
+    min-height: -10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
 .new_footer_top .f_widget.about-widget .f_list li a:hover {
     color: #5e2ced;

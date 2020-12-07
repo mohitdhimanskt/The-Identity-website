@@ -1,7 +1,7 @@
 <template>
   <div>
     <div
-      v-if="article.image"
+      v-if="vechicle.image"
       id="banner"
       class="uk-height-small uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light uk-padding"
       :data-src="getStrapiMedia(vechicle.image.url)"
@@ -34,12 +34,12 @@ import { getMetaTags } from "../../utils/seo";
 
 export default {
   async asyncData({ $strapi, params }) {
-    const matchingVechicle = await $strapi.find("vechicles", {
+    const matchingVechicle = await $strapi.find("vehicles", {
       slug: params.slug,
     });
     return {
-      vechicle: matchingVechicles[0],
-      global: await $strapi.find("global"),
+      vechicle: matchingVechicle[0],
+      // global: await $strapi.find("global"),
     };
   },
   data() {
@@ -51,28 +51,28 @@ export default {
     moment,
     getStrapiMedia,
   },
-  head() {
-    const { defaultSeo, favicon, siteName } = this.global;
+  // head() {
+  //   const { defaultSeo, favicon, siteName } = this.global;
 
-    // Merge default and article-specific SEO data
-    const fullSeo = {
-      ...defaultSeo,
-      metaTitle: this.vechicle.title,
-      metaDescription: this.vechicle.description,
-      shareImage: this.vechicle.image,
-    };
+  //   // Merge default and article-specific SEO data
+  //   const fullSeo = {
+  //     ...defaultSeo,
+  //     metaTitle: this.vechicle.title,
+  //     metaDescription: this.vechicle.description,
+  //     shareImage: this.vechicle.image,
+  //   };
 
-    return {
-      titleTemplate: `%s | ${siteName}`,
-      title: fullSeo.metaTitle,
-      meta: getMetaTags(fullSeo),
-      link: [
-        {
-          rel: "favicon",
-          href: getStrapiMedia(favicon.url),
-        },
-      ],
-    };
-  },
+  //   return {
+  //     titleTemplate: `%s | ${siteName}`,
+  //     title: fullSeo.metaTitle,
+  //     meta: getMetaTags(fullSeo),
+  //     link: [
+  //       {
+  //         rel: "favicon",
+  //         href: getStrapiMedia(favicon.url),
+  //       },
+  //     ],
+  //   };
+  // },
 };
 </script>
