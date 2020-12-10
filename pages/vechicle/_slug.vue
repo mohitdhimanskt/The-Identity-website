@@ -27,7 +27,7 @@
           Book Now
         </nuxt-link>
       </div>
-
+       <br>
       <div class="relate">
         <h2>{{ vechicle.relative }}</h2>
       </div>
@@ -237,6 +237,17 @@ img {
   text-align: center;
   font-style: italic;
   font-size: 20px;
-    
+   width:200px;
+  height: 3rem;
+  
+  padding: 0.3rem 1rem;
+      margin-left: 646px;
+  font-family: "Source Sans Pro", sans-serif;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid #888;
+  border-radius: 20px;
+  transition: background-color 0.5s ease;
+  background-color: yellow;
+
 }
 </style>

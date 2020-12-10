@@ -25,7 +25,7 @@ export default {
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [{ src: "~/plugins/uikit.js", ssr: false }],
-  modules: ["@nuxtjs/markdownit", "@nuxtjs/strapi", "bootstrap-vue/nuxt", '@nuxtjs/font-awesome' ,
+  modules: ["@nuxtjs/markdownit", "@nuxtjs/strapi", "bootstrap-vue/nuxt", '@nuxtjs/font-awesome', '@nuxtjs/axios',
  
 ],
   strapi: {
