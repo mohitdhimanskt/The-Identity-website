@@ -111,7 +111,7 @@ export default {
   font-style: italic;
 }
 .geography {
-  height: 470px;
+  height: 485px;
   border-radius: 10px;
   background-color: #fff;
   box-shadow: 0 40px 40px -20px #8b8d8d44;

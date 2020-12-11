@@ -24,8 +24,8 @@ export default {
   css: ["uikit/dist/css/uikit.min.css", "uikit/dist/css/uikit.css",  "@assets/css/main.css",],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-  plugins: [{ src: "~/plugins/uikit.js", ssr: false }],
-  modules: ["@nuxtjs/markdownit", "@nuxtjs/strapi", "bootstrap-vue/nuxt", '@nuxtjs/font-awesome', '@nuxtjs/axios',
+  plugins: [{ src: "~/plugins/uikit.js", ssr: false },'~plugins/axios'],
+  modules: ["@nuxtjs/markdownit", "@nuxtjs/strapi", "bootstrap-vue/nuxt", '@nuxtjs/font-awesome', '@nuxtjs/axios', '@nuxtjs/auth','@nuxtjs/bulma',
  
 ],
   strapi: {
@@ -56,7 +56,32 @@ export default {
     injected: true,
     html: true,
   },
-
+  axios: {
+    baseURL: process.env.API_AUTH_URL || 'http://localhost:1337'
+  },
+   /*
+   ** Auth module configuration
+   ** See https://auth.nuxtjs.org/schemes/local.html#options
+   */
+  auth: {
+    strategies: {
+      local: {
+        endpoints: {
+          login: {
+            url: 'auth/local',
+            method: 'post',
+            propertyName: 'jwt'
+          },
+          user: {
+            url: 'users/me',
+            method: 'get',
+            propertyName: false
+          },
+          logout: false
+        }
+      }
+    }
+  },
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,
 

@@ -703,7 +703,7 @@ label {
 }
 
 select {
-  width: 50%;
+  width: 142%;
   height: 32px;
 }
 /* .circle{
