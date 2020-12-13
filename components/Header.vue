@@ -28,7 +28,21 @@
           </li>
         </ul>
       </div>
+       <div id="navbarBasicExample" class="navbar-menu">
+ <div v-if="isAuthenticated" class="navbar-start">
+ <div class="navbar-item has-dropdown is-hoverable">
+ <a class="navbar-link">
+ {{ loggedInUser.username }}
+ </a>
 
+ <div class="navbar-dropdown">
+ <a class="navbar-item" href="/profile">My Profile</a>
+ <hr class="navbar-divider" />
+ <a class="navbar-item" @click="logout">Logout</a>
+ </div>
+ </div>
+ </div>
+       </div>
       <div v-if="!isAuthenticated" class="navbar-end">
         <div class="navbar-item">
           <div class="buttons">

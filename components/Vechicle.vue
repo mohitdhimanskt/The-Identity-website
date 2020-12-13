@@ -8,8 +8,9 @@
     height: 1px;
     width: 10%;
     color: lightgrey;
-    background-color: #eb1e29;"
+    background-color: #eb1e29;"  
     />
+  
     <div class="vechicle">
       <nuxt-link
         v-for="vechicle in vehicles"
