@@ -199,12 +199,38 @@
                               <option value="25"> 25</option>
                             </select>
                           </div>
-                          <hr />
+                          
+                         
                         </div>
                       </div>
                     </div>
                   </div>
-
+                    <hr />
+                     <div class="days">
+                       <div class="day">
+                            <label for="name">Number of days:</label>
+                    <input
+                      v-model="name"
+                      type="text"
+                      class="form-control shadow-none"
+                      placeholder=""
+                      id="name"
+                      required
+                    />
+                       </div>
+                          </div>
+                          <hr />
+                          <div class="amount">
+                               <label for="name">Total Amount:</label>
+                    <input
+                      v-model="name"
+                      type="text"
+                      class="form-control shadow-none"
+                      placeholder=""
+                      id="name"
+                      required
+                    />
+                          </div>
                   <div class="payment">
                     <button  on:click="sendMessage" value="upload"  class="btn">
                       {{ loading ? "Sending Message..." : "Submit" }}
@@ -306,6 +332,7 @@ import { getMetaTags } from "../../utils/seo";
 import { getStrapiMedia } from "../../utils/medias";
 
 export default {
+  //  middleware: "auth",
   async asyncData({ $strapi, params }) {
     const matchingVechicle = await $strapi.find("vehicles", {
       slug: params.slug
@@ -715,5 +742,7 @@ select {
     position: absolute;
     
 } */
-
+.day{
+  width: 65px;
+}
 </style>

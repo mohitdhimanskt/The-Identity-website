@@ -65,7 +65,7 @@ import { getStrapiMedia } from "../../utils/medias";
 import { getMetaTags } from "../../utils/seo";
 
 export default {
-  middleware: "auth",
+ 
   props: {
     buttons: {
       type: Array
