@@ -206,11 +206,11 @@
                     </div>
                   </div>
                     <hr />
-                     <div class="days">
+                     <!-- <div class="days">
                        <div class="day">
                             <label for="name">Number of days:</label>
                     <input
-                      v-model="name"
+                      v-model="days"
                       type="text"
                       class="form-control shadow-none"
                       placeholder=""
@@ -218,12 +218,12 @@
                       required
                     />
                        </div>
-                          </div>
-                          <hr />
+                          </div> -->
+                          <!-- <hr />
                           <div class="amount">
                                <label for="name">Total Amount:</label>
                     <input
-                      v-model="name"
+                      v-model="amount"
                       type="text"
                       class="form-control shadow-none"
                       placeholder=""
@@ -231,11 +231,21 @@
                       required
                     />
                           </div>
+                          -->
                   <div class="payment">
+                                        <nuxt-link
+          :to="{ name: 'bookingCart-slug', params: { slug: vechicle.slug } }"
+          tag="a"
+        >  
                     <button  on:click="sendMessage" value="upload"  class="btn">
+                    
+          
                       {{ loading ? "Sending Message..." : "Submit" }}
+                        
                     </button>
+                                        </nuxt-link>
                   </div>
+                          
                 </form>
               </div>
             </div>
@@ -250,81 +260,7 @@
     </div>
   </div>
 
-  <!-- /Login Form -->
-  <!-- <div>
-      <h3>Personal Information</h3>
-    </div>
-    <div v-if="success" class="rounded bg-indigo-500 text-white text-lg p-4">
-      Great! Your message has been sent successfully. I will try to respond
-      quickly.
-    </div>
-    <form v-else v-on:submit.prevent="sendMessage" class="btn">
-      <div v-if="errored" class="rounded bg-red-200 text-lg p-4">
-        Bummer, Something went wrong. Did you fill out all of the fields?
-      </div>
-      <div class="container">
-        <div class="avatar-upload">
-          <div class="avatar-edit">
-            <input type="file" id="imageUpload" accept=".png, .jpg, .jpeg" />
-            <label for="imageUpload"></label>
-          </div>
-          <div class="avatar-preview">
-            <div
-              id="imagePreview"
-              style="background-image: url(https://image.shutterstock.com/image-vector/upload-contact-icon-add-user-600w-615974498.jpg);"
-            ></div>
-          </div>
-        </div>
-      </div>
-      <div class="box bg-img">
-        <div class="content">
-          <h2>Welcome Back</h2>
-
-          <div class="user-input">
-            <input
-              v-model="name"
-              type="text"
-              class="login-input"
-              placeholder="user name"
-              id="name"
-              required
-            />
-          </div>
-
-          <div class="pass-input">
-            <input
-              v-model="email"
-              type="email"
-              class="login-input"
-              placeholder="email"
-              id="my-email"
-              required
-            />
-          </div>
-          <div class="pass-input">
-            <input
-              v-model="phone"
-              type="phone"
-              class="login-input"
-              placeholder="phone"
-              id="phone"
-              required
-            />
-          </div>
-        </div>
-
-        <div class="">
-          <button type="submit" class="btn">
-            {{ loading ? "Sending Message..." : "Submit" }}
-          </button>
-        </div>
-      </div>
-    </form>
-    <div class="booking">
-      <nuxt-link to="/">
-        Back
-      </nuxt-link>
-    </div> -->
+ 
 </template>
 
 <script>

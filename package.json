@@ -21,13 +21,18 @@
     "@nuxtjs/fontawesome": "^1.1.2",
     "@nuxtjs/markdownit": "^1.2.7",
     "@nuxtjs/strapi": "^0.1.8",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-stage-3": "^6.24.1",
     "bootstrap-vue": "^2.17.3",
     "core-js": "^3.6.5",
     "graphql": "^15.4.0",
     "moment": "^2.29.1",
     "next-seo": "^4.17.0",
     "nuxt": "^2.14.6",
-    "uikit": "^3.5.10"
+    "style-loader": "^2.0.0",
+    "uikit": "^3.5.10",
+    "vue-router": "^3.4.9",
+    "vuex": "^3.6.0"
   },
   "devDependencies": {}
 }
