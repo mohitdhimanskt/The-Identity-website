@@ -233,17 +233,14 @@
                           </div>
                           -->
                   <div class="payment">
-                                        <nuxt-link
-          :to="{ name: 'bookingCart-slug', params: { slug: vechicle.slug } }"
-          tag="a"
-        >  
+        
                     <button  on:click="sendMessage" value="upload"  class="btn">
                     
           
                       {{ loading ? "Sending Message..." : "Submit" }}
                         
                     </button>
-                                        </nuxt-link>
+                                       
                   </div>
                           
                 </form>
@@ -268,7 +265,13 @@ import { getMetaTags } from "../../utils/seo";
 import { getStrapiMedia } from "../../utils/medias";
 
 export default {
-  //  middleware: "auth",
+    middleware({ store, redirect }) {
+      // If the user is not authenticated
+      if (!store.state.authenticated) {
+        return redirect('/login')
+      }
+    },
+
   async asyncData({ $strapi, params }) {
     const matchingVechicle = await $strapi.find("vehicles", {
       slug: params.slug
@@ -334,6 +337,7 @@ export default {
       try{
       let response = await this.$axios.post('http://localhost:1337/bookings', formData)
         console.log(response, 'response')
+        
       }
       catch(e){
       console.log(e, 'error');

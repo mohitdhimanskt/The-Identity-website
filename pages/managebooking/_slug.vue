@@ -1,4 +1,6 @@
 <template>
+<div>
+  <h1>Booking Cart</h1>
   <div class="cart">
     <div class="form-group">
       <input
@@ -45,6 +47,7 @@
       </nuxt-link>
     </div>
   </div>
+</div>
 </template>
 <script>
 import moment from "moment";
