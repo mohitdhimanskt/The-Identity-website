@@ -265,13 +265,12 @@ import { getMetaTags } from "../../utils/seo";
 import { getStrapiMedia } from "../../utils/medias";
 
 export default {
-    middleware({ store, redirect }) {
-      // If the user is not authenticated
-      if (!store.state.authenticated) {
-        return redirect('/login')
-      }
-    },
-
+    //   middleware({ store, redirect }) {
+    //   // If the user is not authenticated
+    //   if (!store.state.authenticated) {
+    //     return redirect('/booking')
+    //   }
+    // },
   async asyncData({ $strapi, params }) {
     const matchingVechicle = await $strapi.find("vehicles", {
       slug: params.slug

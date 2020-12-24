@@ -12,6 +12,9 @@
  {{ loggedInUser.email }}
  </p>
  </div>
+ <div class="btn">
+     <button>Delete</button>
+ </div>
  </div>
  </section>
 </template>
@@ -19,7 +22,7 @@
 <script>
 import { mapGetters } from "vuex";
 
-export default {
+export default {    
  middleware: "auth",
  computed: {
  ...mapGetters(["loggedInUser"]),
