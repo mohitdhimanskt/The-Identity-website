@@ -54,7 +54,7 @@
                       v-model="name"
                       type="text"
                       class="form-control shadow-none"
-                      placeholder="user name"
+                      placeholder {{loggedInUser.username}}
                       id="name"
                       required
                     />
@@ -65,7 +65,7 @@
                       v-model="email"
                       type="text"
                       class="form-control shadow-none"
-                      placeholder="user email"
+                      placeholder {{loggedInUser.email}}
                       id="name"
                       required
                     />
@@ -261,10 +261,15 @@
 </template>
 
 <script>
+import { mapGetters } from "vuex";
 import { getMetaTags } from "../../utils/seo";
 import { getStrapiMedia } from "../../utils/medias";
 
 export default {
+  middleware: "auth",
+ computed: {
+ ...mapGetters(["isAuthenticated","loggedInUser"]),
+ },
     //   middleware({ store, redirect }) {
     //   // If the user is not authenticated
     //   if (!store.state.authenticated) {
@@ -274,7 +279,7 @@ export default {
   async asyncData({ $strapi, params }) {
     const matchingVechicle = await $strapi.find("vehicles", {
       slug: params.slug
-    });
+    }); 
     return {
       vechicle: matchingVechicle[0]
       // global: await $strapi.find("global"),
