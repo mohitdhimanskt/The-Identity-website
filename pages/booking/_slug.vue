@@ -275,7 +275,7 @@ export default {
     //   if (!store.state.authenticated) {
     //     return redirect('/booking')
     //   }
-    // },
+    // },          
   async asyncData({ $strapi, params }) {
     const matchingVechicle = await $strapi.find("vehicles", {
       slug: params.slug
